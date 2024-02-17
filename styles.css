@@ -1,6 +1,76 @@
-body {
-    background-color: black;
-    color: aliceblue;
+/* CSS for the menu */
+.menu {
+    display: flex;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+        'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #333;
+    /* Background color of the menu */
+    padding: 20px;
+    /* Padding around the menu */
+    text-align: center;
+    /* Center-align the menu items */
+}
 
+.menu a {
+    color: rgb(203, 239, 247);
+    /* Text color of menu links */
+    text-decoration: none;
+    /* Remove underline from links */
+    margin: 0 10px;
+    /* Spacing between menu items */
+    padding: 5px 20px;
+    /* Add padding to menu items */
+    border-radius: 5px;
+    /* Add rounded corners to menu items */
+    transition: background-color 0.3s, transform 0.3s;
+    /* Smooth transition for background color and transform */
+}
 
+.menu a:hover {
+    background-color: #555;
+    /* Darken background color on hover */
+    transform: translateY(-3px);
+    /* Move menu item slightly upwards on hover */
+}
+
+.search-container {
+    display: flex;
+    /* Use flexbox for layout */
+    align-items: flex-end;
+    /* Align items at the bottom */
+    margin-left: auto;
+    /* Push the search container to the right */
+}
+
+.search-container input[type="text"] {
+    padding: 5px;
+    /* Add padding to input field */
+    border-radius: 5px;
+    /* Add rounded corners to input field */
+    border: none;
+    /* Remove border */
+    margin-right: 5px;
+    /* Spacing between input field and button */
+}
+
+.search-container button {
+    padding: 5px 10px;
+    /* Add padding to button */
+    border-radius: 5px;
+    /* Add rounded corners to button */
+    background-color: #555;
+    /* Background color of button */
+    color: white;
+    /* Text color of button */
+    border: none;
+    /* Remove border */
+    cursor: pointer;
+    /* Change cursor to pointer on hover */
+    transition: background-color 0.3s;
+    /* Smooth transition for background color */
+}
+
+.search-container button:hover {
+    background-color: #777;
+    /* Darken background color of button on hover */
 }
